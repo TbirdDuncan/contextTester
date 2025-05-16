@@ -1,4 +1,4 @@
-package com.mine.domain;
+package com.demo.domain;
 
 import io.micronaut.core.annotation.Introspected
 import io.micronaut.serde.annotation.Serdeable

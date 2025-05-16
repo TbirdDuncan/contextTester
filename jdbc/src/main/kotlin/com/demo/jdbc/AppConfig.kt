@@ -1,13 +1,12 @@
-package com.mine
+package com.demo.jdbc
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import io.micronaut.context.annotation.Factory
-import jakarta.inject.Named
 import jakarta.inject.Singleton
-import org.jooq.DSLContext
-import org.jooq.SQLDialect
-import org.jooq.impl.DSL
+//import org.jooq.DSLContext
+//import org.jooq.SQLDialect
+//import org.jooq.impl.DSL
 
 @Factory
 class AppConfig {
@@ -21,9 +20,9 @@ class AppConfig {
         return HikariDataSource(hikariConfig)
     }
 
-    @Singleton
-    @Named("dslContext")
-    fun dslContext(hikariDataSource: HikariDataSource): DSLContext {
-        return DSL.using(hikariDataSource, SQLDialect.POSTGRES)
-    }
+//    @Singleton
+//    @Named("dslContext")
+//    fun dslContext(hikariDataSource: HikariDataSource): DSLContext {
+//        return DSL.using(hikariDataSource, SQLDialect.POSTGRES)
+//    }
 }
